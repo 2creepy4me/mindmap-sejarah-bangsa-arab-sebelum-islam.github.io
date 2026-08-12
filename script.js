@@ -15,7 +15,7 @@
    ========================================================================== */
 const MINDMAP_DATA = {
   root: {
-    label: 'BANGSA ARAB SEBELUM ISLAM'
+    label: 'Bangsa Arab Di Zaman Jahiliyah'
   },
   branches: [
     {
@@ -24,33 +24,30 @@ const MINDMAP_DATA = {
       hue: 'blue',
       x: -320, y: -180,
       article: {
-        title: 'Branch One',
+        title: 'Mantap',
         body: [
-          'Ketuhanan yang maha esa'
         ]
       }
     },
     {
       id: 'b2',
-      label: 'politik',
+      label: 'Ekonomi',
       hue: 'teal',
       x: 320, y: -140,
       article: {
-        title: 'Branch Two',
+        title: 'gitulah',
         body: [
-          'lorem ipsum dolor sit amet, assalamualaikum have we ever met?.'
         ]
       }
     },
     {
       id: 'b3',
-      label: 'Ekonomi',
+      label: 'Politik',
       hue: 'violet',
       x: -280, y: 190,
       article: {
-        title: 'Ekonomi',
+        title: 'prabowo',
         body: [
-          'ndak tau.'
         ]
       }
     },
@@ -59,10 +56,9 @@ const MINDMAP_DATA = {
       label: 'Sosial dan Budaya',
       hue: 'rust',
       x: 300, y: 200,
-      article: {,
-        title: 'Sosial dan Budaya',
+      article: {
+        title: 'Mafia sholawat',
         body: [
-          'gtau.'
         ]
       }
     }
