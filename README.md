@@ -1,5 +1,5 @@
 # tugas proyek digital
-## 1 2 makan pentol
-## gtau
+1 2 makan pentol
+ gtau
 
 
