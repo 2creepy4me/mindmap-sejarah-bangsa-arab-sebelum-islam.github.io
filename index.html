@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Mind Map</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<meta name="color-scheme" content="light dark">
+<title>Mindmap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>MY WEBSITE WORKS!</h1>
+  <div id="app">
+
+    <header id="topbar">
+      <div class="brand"><span class="dot"></span>Mindmap</div>
+      <div class="controls">
+        <button id="zoomOut" type="button" aria-label="Zoom out">&minus;</button>
+        <button id="zoomReset" type="button" aria-label="Reset view">&#8634;</button>
+        <button id="zoomIn" type="button" aria-label="Zoom in">+</button>
+        <button id="themeToggle" type="button" aria-label="Toggle theme">&#9790;</button>
+      </div>
+    </header>
+
+    <div id="canvasWrap">
+      <div id="world">
+        <svg id="connectors" width="3200" height="2200"></svg>
+        <!-- Node elements are inserted here by script.js, generated from the
+             MINDMAP_DATA object at the top of that file. -->
+      </div>
+    </div>
+
+    <div id="hint">Tap the main node to open its branches &bull; tap a branch for its article &bull; drag to move &bull; pinch or scroll to zoom</div>
+
+  </div>
+
+  <!-- Article side panel -->
+  <aside id="articlePanel" aria-hidden="true">
+    <button id="articleClose" type="button" aria-label="Close article">&times;</button>
+    <div id="articleEyebrow" class="article-eyebrow"></div>
+    <h2 id="articleTitle"></h2>
+    <div id="articleBody"></div>
+  </aside>
+  <div id="scrim"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
