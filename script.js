@@ -15,59 +15,54 @@
    ========================================================================== */
 const MINDMAP_DATA = {
   root: {
-    label: 'Main Topic'
+    label: 'BANGSA ARAB SEBELUM ISLAM'
   },
   branches: [
     {
       id: 'b1',
-      label: 'Branch One',
+      label: 'Agama',
       hue: 'blue',
       x: -320, y: -180,
       article: {
-        eyebrow: 'Section 01',
         title: 'Branch One',
         body: [
-          'Replace this with the content for your first branch.',
-          'Add as many paragraphs as you need here.'
+          'Ketuhanan yang maha esa'
         ]
       }
     },
     {
       id: 'b2',
-      label: 'Branch Two',
+      label: 'politik',
       hue: 'teal',
       x: 320, y: -140,
       article: {
-        eyebrow: 'Section 02',
         title: 'Branch Two',
         body: [
-          'Replace this with the content for your second branch.'
+          'lorem ipsum dolor sit amet, assalamualaikum have we ever met?.'
         ]
       }
     },
     {
       id: 'b3',
-      label: 'Branch Three',
+      label: 'Ekonomi',
       hue: 'violet',
       x: -280, y: 190,
       article: {
-        eyebrow: 'Section 03',
-        title: 'Branch Three',
+        title: 'Ekonomi',
         body: [
-          'Replace this with the content for your third branch.'
+          'ndak tau.'
         ]
       }
     },
     {
       id: 'b4',
-      label: 'Branch Four',
+      label: 'Sosial dan Budaya',
       hue: 'rust',
       x: 300, y: 200,
-      article: {
-        eyebrow: 'Section 04',
-        title: 'Branch Four',
+      article: {,
+        title: 'Sosial dan Budaya',
         body: [
-          'Replace this with the content for your fourth branch.'
+          'gtau.'
         ]
       }
     }
