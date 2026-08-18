@@ -25,7 +25,7 @@ const MINDMAP_DATA = {
       x: -320, y: -180,
       article: {
         title: 'Mantap',
-        body: [ 'test'
+        body: [ 'test', 
         ]
       }
     },
