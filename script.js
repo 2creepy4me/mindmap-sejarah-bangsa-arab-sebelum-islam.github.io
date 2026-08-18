@@ -24,10 +24,13 @@ const MINDMAP_DATA = {
       hue: 'blue',
       x: -320, y: -180,
       article: {
-        title: 'Mantap',
-        body: [ 'test', 
-        ]
-      }
+  title: 'Agama Bangsa Arab',
+  body: [
+    'Bangsa Arab pada zaman Jahiliyah sebagian besar menyembah berhala.',
+    'Mereka memiliki banyak berhala yang ditempatkan di sekitar Ka'bah.',
+    'Selain penyembahan berhala, terdapat juga sebagian masyarakat yang menganut agama Yahudi, Nasrani, dan kepercayaan lainnya.'
+  ]
+}
     },
     {
       id: 'b2',
