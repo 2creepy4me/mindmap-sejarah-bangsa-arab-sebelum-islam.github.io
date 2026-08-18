@@ -1,19 +1,3 @@
-/* ==========================================================================
-   MINDMAP CONTENT
-   Edit this object to build your own mindmap. Nothing below this block
-   needs to change for content edits.
-
-   - root: the center node. label + optional short "sub" line under it.
-   - branches: array of top-level nodes connected to root. Each becomes
-     visible when the root node is clicked. "hue" picks the accent color
-     for that branch and its wire (blue | teal | violet | rust).
-   - Each branch has an "article" object shown in the side panel when the
-     branch is clicked: eyebrow (small label), title, and body (array of
-     paragraph strings).
-   - x / y are position offsets in pixels, relative to the root node's
-     center. Adjust these to change the layout.
-   ========================================================================== */
-
 const MINDMAP_DATA = {
   root: {
     label: 'Bangsa Arab Di Zaman Jahiliyah'
@@ -21,15 +5,15 @@ const MINDMAP_DATA = {
   branches: [
     {
       id: 'b1',
-      label: 'Agama',
+      label: 'kepercayaan',
       hue: 'blue',
       x: -320, y: -180,
       article: {
-        title: 'JUDUL_AGAMA',
+        title: 'kepercayaan bangsa arab sebelum islam masuk',
         body: [
-          'ISI_AGAMA_1',
-          'ISI_AGAMA_2',
-          'ISI_AGAMA_3'
+          'Penyembahan Berhala (Paganisme): Awalnya, masyarakat Arab mengikuti ajaran tauhid Nabi Ibrahim (Agama Hanif). Namun seiring waktu, ajaran tersebut menyimpang menjadi politeisme (menyembah banyak tuhan). Terdapat sekitar 360 berhala di sekitar Ka’bah, dengan yang paling diagungkan bernama Hubal, Latta, Uzza, dan Manat.',
+          'Agama Lainnya: Selain penganut pagan, terdapat penganut agama Yahudi (terpusat di Yatsrib/Madinah dan Khaibar), Kristen (di Najran dan Yaman), serta Majusi/Zoroaster di daerah yang berbatasan dengan Persia.',
+          'Takhayul: Kepercayaan terhadap hal-hal mistis sangat kuat. Mereka sangat bergantung pada undian nasib, ramalan bintang, sihir, dan perlindungan dari jin.'
         ]
       }
     },
@@ -39,11 +23,12 @@ const MINDMAP_DATA = {
       hue: 'teal',
       x: 320, y: -140,
       article: {
-        title: 'JUDUL_EKONOMI',
+        title: 'Ekonomi bangsa arab di zaman jahiliyah',
         body: [
-          'ISI_EKONOMI_1',
-          'ISI_EKONOMI_2',
-          'ISI_EKONOMI_3'
+          'Perdagangan: Penduduk kota (disebut Ahlul Hadhar) seperti suku Quraisy di Makkah adalah pedagang ulung. Makkah adalah pusat transit rute dagang internasional. Mereka memiliki tradisi mengirim kafilah dagang ke Syam (Suriah) pada musim panas dan ke Yaman pada musim dingin.',
+          'Pertanian: Di wilayah yang memiliki sumber air dan oase seperti Yatsrib (Madinah) dan Thaif, penduduknya bertani kurma, gandum, dan anggur.',
+          'Peternakan: Masyarakat Badui (Ahlul Badar) yang nomaden mengandalkan peternakan unta, kuda, dan domba. Mereka hidup berpindah-pindah mencari sumber air dan padang rumput.',
+          'Kesenjangan dan Riba: Praktik riba (bunga pinjaman) merajalela. Para rentenir memeras rakyat kecil hingga sering kali mereka yang gagal bayar terpaksa menyerahkan kebebasannya dan menjadi budak.'
         ]
       }
     },
@@ -53,11 +38,11 @@ const MINDMAP_DATA = {
       hue: 'violet',
       x: -280, y: 190,
       article: {
-        title: 'JUDUL_POLITIK',
+        title: 'Politik bangsa arab di zaman jahiliyah',
         body: [
-          'ISI_POLITIK_1',
-          'ISI_POLITIK_2',
-          'ISI_POLITIK_3'
+          'Sistem Kabilah (Kesukuan): Tidak ada pemerintahan pusat, hukum negara, atau kerajaan yang menyatukan seluruh pedalaman Jazirah Arab. Masyarakat hidup berkelompok berdasarkan ikatan darah (suku/kabilah) yang dipimpin oleh seorang Syekh.',
+          'Fanatisme Suku (Asabiyyah): Loyalitas terhadap suku berada di atas segalanya. Jika satu anggota suku diserang, seluruh suku akan menuntut balas tanpa memandang siapa yang benar atau salah. Hal ini membuat perang antarsuku sering meletus dan bisa berlangsung turun-temurun (seperti Perang Basus dan Perang Fijar).',
+          'Pengaruh Eksternal: Wilayah perbatasan Arab dipengaruhi oleh dua kekuatan adidaya, yaitu Kekaisaran Romawi/Bizantium (lewat Kerajaan Ghassaniyah) dan Persia/Sassania (lewat Kerajaan Lakhmiyah). Namun, wilayah tengah seperti Hijaz (tempat Makkah dan Madinah berada) tetap merdeka karena medannya yang berupa gurun keras dan tidak menguntungkan untuk dijajah.'
         ]
       }
     },
@@ -67,21 +52,17 @@ const MINDMAP_DATA = {
       hue: 'rust',
       x: 300, y: 200,
       article: {
-        title: 'JUDUL_SOSIAL_BUDAYA',
+        title: 'Sosial Budaya arab pra islam',
         body: [
-          'ISI_SOSIAL_BUDAYA_1',
-          'ISI_SOSIAL_BUDAYA_2',
-          'ISI_SOSIAL_BUDAYA_3'
+          'Kemerosotan Moral: Tradisi buruk menjadi kebiasaan sehari-hari, seperti mabuk-mabukan (khamr), perjudian (maysir), perampokan kafilah, dan prostitusi.',
+          'Degradasi Status Wanita: Wanita tidak memiliki hak waris dan posisinya sangat lemah. Praktik yang paling kelam adalah pembunuhan bayi perempuan yang baru lahir dengan cara dikubur hidup-hidup. Mereka melakukan ini karena takut miskin atau menganggap anak perempuan membawa aib karena kelak tidak bisa ikut berperang.',
+          'Kecintaan pada Sastra: Di balik kebiasaan buruk tersebut, bangsa Arab sangat cerdas dan memiliki peradaban sastra tingkat tinggi. Syair (puisi) adalah "media massa" masa itu. Para penyair sangat dihormati, dan mereka rutin mengadakan festival syair di pasar-pasar seperti Pasar Ukaz. Syair terbaik akan ditulis dengan tinta emas dan digantung di dinding Ka’bah (Al-Mu’allaqat).'
         ]
       }
     }
   ]
 };
 
-/* ==========================================================================
-   Rendering + interaction
-   You shouldn't need to edit below this line to change content.
-   ========================================================================== */
 (function () {
   'use strict';
 
@@ -103,7 +84,6 @@ const MINDMAP_DATA = {
 
   function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
 
-  // ---------- build node position list from data ----------
   var centerX = WORLD_W / 2, centerY = WORLD_H / 2;
   var rootPos = { x: centerX - 75, y: centerY - 22 };
   var branches = MINDMAP_DATA.branches.map(function (b) {
@@ -118,8 +98,6 @@ const MINDMAP_DATA = {
   });
 
   var rootExpanded = false;
-
-  // ---------- view transform (pan/zoom) ----------
   var view = { x: 0, y: 0, scale: 1 };
 
   function applyView() {
@@ -152,7 +130,6 @@ const MINDMAP_DATA = {
     centerOn(cx, cy, 1);
   }
 
-  // ---------- build node elements ----------
   function buildRootEl() {
     var el = document.createElement('div');
     el.className = 'node root';
@@ -208,8 +185,7 @@ const MINDMAP_DATA = {
 
     return el;
   }
-
-  // ---------- drag + tap detection (shared by root + branch nodes) ----------
+  
   function wireDrag(el, posRef, onTap) {
     var pointer = null;
 
@@ -248,7 +224,6 @@ const MINDMAP_DATA = {
     el.addEventListener('pointercancel', endPointer);
   }
 
-  // ---------- root expand/collapse ----------
   function toggleRoot(rootEl) {
     rootExpanded = !rootExpanded;
     rootEl.classList.toggle('expanded', rootExpanded);
@@ -268,7 +243,6 @@ const MINDMAP_DATA = {
     requestAnimationFrame(updateConnectors);
   }
 
-  // ---------- connectors (curved wires from root to each branch) ----------
   function edgePoint(el, towardX, towardY) {
     var cx = el.offsetLeft + el.offsetWidth / 2;
     var cy = el.offsetTop + el.offsetHeight / 2;
@@ -341,7 +315,6 @@ const MINDMAP_DATA = {
     });
   }
 
-  // ---------- article side panel ----------
   var activeArticleId = null;
 
   function openArticle(b) {
@@ -381,7 +354,6 @@ const MINDMAP_DATA = {
     if (e.key === 'Escape' && activeArticleId) closeArticle();
   });
 
-  // ---------- pan + pinch zoom on empty canvas ----------
   var canvasPointers = new Map();
   var panPointer = null;
   var pinch = null;
@@ -447,7 +419,6 @@ const MINDMAP_DATA = {
   });
   document.getElementById('zoomReset').addEventListener('click', fitInitial);
 
-  // ---------- theme ----------
   function applyTheme(t) {
     document.documentElement.setAttribute('data-theme', t);
     themeBtn.innerHTML = t === 'dark' ? '&#9728;' : '&#9790;';
@@ -459,7 +430,6 @@ const MINDMAP_DATA = {
     applyTheme(currentTheme);
   });
 
-  // ---------- init ----------
   function init() {
     world.appendChild(buildRootEl());
     branches.forEach(function (b) { world.appendChild(buildBranchEl(b)); });
