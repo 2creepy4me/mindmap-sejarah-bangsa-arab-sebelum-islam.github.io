@@ -12,7 +12,8 @@
      paragraph strings).
    - x / y are position offsets in pixels, relative to the root node's
      center. Adjust these to change the layout.
-   ========================================================================== 
+   ========================================================================== */
+
 const MINDMAP_DATA = {
   root: {
     label: 'Bangsa Arab Di Zaman Jahiliyah'
