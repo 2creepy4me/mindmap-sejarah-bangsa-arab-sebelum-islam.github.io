@@ -12,7 +12,7 @@
      paragraph strings).
    - x / y are position offsets in pixels, relative to the root node's
      center. Adjust these to change the layout.
-   ========================================================================== */
+   ========================================================================== 
 const MINDMAP_DATA = {
   root: {
     label: 'Bangsa Arab Di Zaman Jahiliyah'
@@ -24,13 +24,13 @@ const MINDMAP_DATA = {
       hue: 'blue',
       x: -320, y: -180,
       article: {
-  title: 'Agama Bangsa Arab',
-  body: [
-    'Bangsa Arab pada zaman Jahiliyah sebagian besar menyembah berhala.',
-    'Mereka memiliki banyak berhala yang ditempatkan di sekitar Ka'bah.',
-    'Selain penyembahan berhala, terdapat juga sebagian masyarakat yang menganut agama Yahudi, Nasrani, dan kepercayaan lainnya.'
-  ]
-}
+        title: 'JUDUL_AGAMA',
+        body: [
+          'ISI_AGAMA_1',
+          'ISI_AGAMA_2',
+          'ISI_AGAMA_3'
+        ]
+      }
     },
     {
       id: 'b2',
@@ -38,8 +38,11 @@ const MINDMAP_DATA = {
       hue: 'teal',
       x: 320, y: -140,
       article: {
-        title: 'gitulah',
+        title: 'JUDUL_EKONOMI',
         body: [
+          'ISI_EKONOMI_1',
+          'ISI_EKONOMI_2',
+          'ISI_EKONOMI_3'
         ]
       }
     },
@@ -49,8 +52,11 @@ const MINDMAP_DATA = {
       hue: 'violet',
       x: -280, y: 190,
       article: {
-        title: 'prabowo',
+        title: 'JUDUL_POLITIK',
         body: [
+          'ISI_POLITIK_1',
+          'ISI_POLITIK_2',
+          'ISI_POLITIK_3'
         ]
       }
     },
@@ -60,8 +66,11 @@ const MINDMAP_DATA = {
       hue: 'rust',
       x: 300, y: 200,
       article: {
-        title: 'Mafia sholawat',
+        title: 'JUDUL_SOSIAL_BUDAYA',
         body: [
+          'ISI_SOSIAL_BUDAYA_1',
+          'ISI_SOSIAL_BUDAYA_2',
+          'ISI_SOSIAL_BUDAYA_3'
         ]
       }
     }
